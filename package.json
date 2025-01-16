@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@ffmpeg-installer/darwin-arm64": "^4.1.5"
+  }
+}

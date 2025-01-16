@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+relaxr/dist/*
+relaxr/dist-electron/*
 /.pnp
 .pnp.js
 
@@ -21,3 +23,385 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+relaxr/release/*
+relaxr/release/builder-debug.yml
+relaxr/release/builder-effective-config.yaml
+relaxr/release/Relaxr Setup 0.0.1.exe
+relaxr/release/Relaxr Setup 0.0.1.exe.blockmap
+relaxr/release/bup/builder-debug.yml
+relaxr/release/bup/builder-effective-config.yaml
+relaxr/release/bup/Relaxr Setup 0.0.1.exe
+relaxr/release/bup/Relaxr Setup 0.0.1.exe.blockmap
+relaxr/release/bup/Relaxr-0.0.1-arm64.dmg
+relaxr/release/bup/Relaxr-0.0.1-arm64.dmg.blockmap
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Info.plist
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/PkgInfo
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Electron Framework
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Helpers
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Libraries
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Resources
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/Current
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libEGL.dylib
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libGLESv2.dylib
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libvk_swiftshader.dylib
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/vk_swiftshader_icd.json
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/chrome_100_percent.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/chrome_200_percent.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/icudtl.dat
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/Info.plist
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/MainMenu.nib
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/resources.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/v8_context_snapshot.arm64.bin
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/af.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/am.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ar.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bg.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bn.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ca.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/cs.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/da.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/de.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/el.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en_GB.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es_419.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/et.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fa.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fi.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fil.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fr.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/gu.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/he.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hi.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hr.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hu.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/id.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/it.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ja.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/kn.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ko.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lt.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lv.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ml.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/mr.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ms.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nb.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nl.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pl.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_BR.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_PT.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ro.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ru.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sk.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sl.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sr.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sv.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sw.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ta.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/te.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/th.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/tr.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/uk.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ur.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/vi.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW.lproj/locale.pak
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Mantle.framework/Mantle
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Mantle.framework/Resources
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Mantle.framework/Versions/Current
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Mantle.framework/Versions/A/Mantle
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Mantle.framework/Versions/A/Resources/Info.plist
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/ReactiveObjC.framework/ReactiveObjC
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/ReactiveObjC.framework/Resources
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/ReactiveObjC.framework/Versions/Current
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/ReactiveObjC
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/Resources/Info.plist
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (GPU).app/Contents/Info.plist
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (GPU).app/Contents/PkgInfo
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (GPU).app/Contents/MacOS/Relaxr Helper (GPU)
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (Plugin).app/Contents/Info.plist
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (Plugin).app/Contents/PkgInfo
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (Plugin).app/Contents/MacOS/Relaxr Helper (Plugin)
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (Renderer).app/Contents/Info.plist
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (Renderer).app/Contents/PkgInfo
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (Renderer).app/Contents/MacOS/Relaxr Helper (Renderer)
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper.app/Contents/Info.plist
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper.app/Contents/PkgInfo
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper.app/Contents/MacOS/Relaxr Helper
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Squirrel.framework/Resources
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Squirrel.framework/Squirrel
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Squirrel.framework/Versions/Current
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/Info.plist
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/MacOS/Relaxr
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Resources/app.asar
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Resources/electron.icns
+relaxr/release/bup/mac-arm64/Relaxr.app/Contents/Resources/ffmpeg
+relaxr/release/bup/win-unpacked/chrome_100_percent.pak
+relaxr/release/bup/win-unpacked/chrome_200_percent.pak
+relaxr/release/bup/win-unpacked/d3dcompiler_47.dll
+relaxr/release/bup/win-unpacked/ffmpeg.dll
+relaxr/release/bup/win-unpacked/icudtl.dat
+relaxr/release/bup/win-unpacked/libEGL.dll
+relaxr/release/bup/win-unpacked/libGLESv2.dll
+relaxr/release/bup/win-unpacked/LICENSE.electron.txt
+relaxr/release/bup/win-unpacked/LICENSES.chromium.html
+relaxr/release/bup/win-unpacked/Relaxr.exe
+relaxr/release/bup/win-unpacked/resources.pak
+relaxr/release/bup/win-unpacked/snapshot_blob.bin
+relaxr/release/bup/win-unpacked/v8_context_snapshot.bin
+relaxr/release/bup/win-unpacked/vk_swiftshader_icd.json
+relaxr/release/bup/win-unpacked/vk_swiftshader.dll
+relaxr/release/bup/win-unpacked/vulkan-1.dll
+relaxr/release/bup/win-unpacked/locales/af.pak
+relaxr/release/bup/win-unpacked/locales/am.pak
+relaxr/release/bup/win-unpacked/locales/ar.pak
+relaxr/release/bup/win-unpacked/locales/bg.pak
+relaxr/release/bup/win-unpacked/locales/bn.pak
+relaxr/release/bup/win-unpacked/locales/ca.pak
+relaxr/release/bup/win-unpacked/locales/cs.pak
+relaxr/release/bup/win-unpacked/locales/da.pak
+relaxr/release/bup/win-unpacked/locales/de.pak
+relaxr/release/bup/win-unpacked/locales/el.pak
+relaxr/release/bup/win-unpacked/locales/en-GB.pak
+relaxr/release/bup/win-unpacked/locales/en-US.pak
+relaxr/release/bup/win-unpacked/locales/es-419.pak
+relaxr/release/bup/win-unpacked/locales/es.pak
+relaxr/release/bup/win-unpacked/locales/et.pak
+relaxr/release/bup/win-unpacked/locales/fa.pak
+relaxr/release/bup/win-unpacked/locales/fi.pak
+relaxr/release/bup/win-unpacked/locales/fil.pak
+relaxr/release/bup/win-unpacked/locales/fr.pak
+relaxr/release/bup/win-unpacked/locales/gu.pak
+relaxr/release/bup/win-unpacked/locales/he.pak
+relaxr/release/bup/win-unpacked/locales/hi.pak
+relaxr/release/bup/win-unpacked/locales/hr.pak
+relaxr/release/bup/win-unpacked/locales/hu.pak
+relaxr/release/bup/win-unpacked/locales/id.pak
+relaxr/release/bup/win-unpacked/locales/it.pak
+relaxr/release/bup/win-unpacked/locales/ja.pak
+relaxr/release/bup/win-unpacked/locales/kn.pak
+relaxr/release/bup/win-unpacked/locales/ko.pak
+relaxr/release/bup/win-unpacked/locales/lt.pak
+relaxr/release/bup/win-unpacked/locales/lv.pak
+relaxr/release/bup/win-unpacked/locales/ml.pak
+relaxr/release/bup/win-unpacked/locales/mr.pak
+relaxr/release/bup/win-unpacked/locales/ms.pak
+relaxr/release/bup/win-unpacked/locales/nb.pak
+relaxr/release/bup/win-unpacked/locales/nl.pak
+relaxr/release/bup/win-unpacked/locales/pl.pak
+relaxr/release/bup/win-unpacked/locales/pt-BR.pak
+relaxr/release/bup/win-unpacked/locales/pt-PT.pak
+relaxr/release/bup/win-unpacked/locales/ro.pak
+relaxr/release/bup/win-unpacked/locales/ru.pak
+relaxr/release/bup/win-unpacked/locales/sk.pak
+relaxr/release/bup/win-unpacked/locales/sl.pak
+relaxr/release/bup/win-unpacked/locales/sr.pak
+relaxr/release/bup/win-unpacked/locales/sv.pak
+relaxr/release/bup/win-unpacked/locales/sw.pak
+relaxr/release/bup/win-unpacked/locales/ta.pak
+relaxr/release/bup/win-unpacked/locales/te.pak
+relaxr/release/bup/win-unpacked/locales/th.pak
+relaxr/release/bup/win-unpacked/locales/tr.pak
+relaxr/release/bup/win-unpacked/locales/uk.pak
+relaxr/release/bup/win-unpacked/locales/ur.pak
+relaxr/release/bup/win-unpacked/locales/vi.pak
+relaxr/release/bup/win-unpacked/locales/zh-CN.pak
+relaxr/release/bup/win-unpacked/locales/zh-TW.pak
+relaxr/release/bup/win-unpacked/resources/app.asar
+relaxr/release/bup/win-unpacked/resources/elevate.exe
+relaxr/release/bup/win-unpacked/resources/ffmpeg
+relaxr/release/bup/win-unpacked/resources/ffmpeg.exe
+relaxr/release/mac/builder-debug.yml
+relaxr/release/mac/builder-effective-config.yaml
+relaxr/release/mac/Relaxr-0.0.1-arm64.dmg
+relaxr/release/mac/Relaxr-0.0.1-arm64.dmg.blockmap
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Info.plist
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/PkgInfo
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Electron Framework
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Helpers
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Libraries
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Resources
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/Current
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Helpers/chrome_crashpad_handler
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libEGL.dylib
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libffmpeg.dylib
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libGLESv2.dylib
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/libvk_swiftshader.dylib
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Libraries/vk_swiftshader_icd.json
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/chrome_100_percent.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/chrome_200_percent.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/icudtl.dat
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/Info.plist
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/MainMenu.nib
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/resources.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/v8_context_snapshot.arm64.bin
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/af.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/am.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ar.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bg.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/bn.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ca.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/cs.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/da.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/de.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/el.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/en_GB.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/es_419.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/et.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fa.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fi.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fil.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/fr.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/gu.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/he.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hi.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hr.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/hu.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/id.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/it.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ja.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/kn.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ko.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lt.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/lv.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ml.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/mr.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ms.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nb.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/nl.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pl.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_BR.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/pt_PT.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ro.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ru.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sk.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sl.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sr.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sv.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/sw.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ta.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/te.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/th.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/tr.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/uk.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/ur.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/vi.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_CN.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Resources/zh_TW.lproj/locale.pak
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Mantle.framework/Mantle
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Mantle.framework/Resources
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Mantle.framework/Versions/Current
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Mantle.framework/Versions/A/Mantle
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Mantle.framework/Versions/A/Resources/Info.plist
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/ReactiveObjC.framework/ReactiveObjC
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/ReactiveObjC.framework/Resources
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/ReactiveObjC.framework/Versions/Current
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/ReactiveObjC
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/ReactiveObjC.framework/Versions/A/Resources/Info.plist
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (GPU).app/Contents/Info.plist
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (GPU).app/Contents/PkgInfo
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (GPU).app/Contents/MacOS/Relaxr Helper (GPU)
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (Plugin).app/Contents/Info.plist
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (Plugin).app/Contents/PkgInfo
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (Plugin).app/Contents/MacOS/Relaxr Helper (Plugin)
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (Renderer).app/Contents/Info.plist
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (Renderer).app/Contents/PkgInfo
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper (Renderer).app/Contents/MacOS/Relaxr Helper (Renderer)
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper.app/Contents/Info.plist
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper.app/Contents/PkgInfo
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Relaxr Helper.app/Contents/MacOS/Relaxr Helper
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Squirrel.framework/Resources
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Squirrel.framework/Squirrel
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Squirrel.framework/Versions/Current
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Squirrel.framework/Versions/A/Squirrel
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/Info.plist
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Frameworks/Squirrel.framework/Versions/A/Resources/ShipIt
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/MacOS/Relaxr
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Resources/app.asar
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Resources/electron.icns
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Resources/ffmpeg
+relaxr/release/mac/mac-arm64/Relaxr.app/Contents/Resources/ffmpeg.exe
+relaxr/release/win-unpacked/chrome_100_percent.pak
+relaxr/release/win-unpacked/chrome_200_percent.pak
+relaxr/release/win-unpacked/d3dcompiler_47.dll
+relaxr/release/win-unpacked/ffmpeg.dll
+relaxr/release/win-unpacked/icudtl.dat
+relaxr/release/win-unpacked/libEGL.dll
+relaxr/release/win-unpacked/libGLESv2.dll
+relaxr/release/win-unpacked/LICENSE.electron.txt
+relaxr/release/win-unpacked/LICENSES.chromium.html
+relaxr/release/win-unpacked/Relaxr.exe
+relaxr/release/win-unpacked/resources.pak
+relaxr/release/win-unpacked/snapshot_blob.bin
+relaxr/release/win-unpacked/v8_context_snapshot.bin
+relaxr/release/win-unpacked/vk_swiftshader_icd.json
+relaxr/release/win-unpacked/vk_swiftshader.dll
+relaxr/release/win-unpacked/vulkan-1.dll
+relaxr/release/win-unpacked/locales/af.pak
+relaxr/release/win-unpacked/locales/am.pak
+relaxr/release/win-unpacked/locales/ar.pak
+relaxr/release/win-unpacked/locales/bg.pak
+relaxr/release/win-unpacked/locales/bn.pak
+relaxr/release/win-unpacked/locales/ca.pak
+relaxr/release/win-unpacked/locales/cs.pak
+relaxr/release/win-unpacked/locales/da.pak
+relaxr/release/win-unpacked/locales/de.pak
+relaxr/release/win-unpacked/locales/el.pak
+relaxr/release/win-unpacked/locales/en-GB.pak
+relaxr/release/win-unpacked/locales/en-US.pak
+relaxr/release/win-unpacked/locales/es-419.pak
+relaxr/release/win-unpacked/locales/es.pak
+relaxr/release/win-unpacked/locales/et.pak
+relaxr/release/win-unpacked/locales/fa.pak
+relaxr/release/win-unpacked/locales/fi.pak
+relaxr/release/win-unpacked/locales/fil.pak
+relaxr/release/win-unpacked/locales/fr.pak
+relaxr/release/win-unpacked/locales/gu.pak
+relaxr/release/win-unpacked/locales/he.pak
+relaxr/release/win-unpacked/locales/hi.pak
+relaxr/release/win-unpacked/locales/hr.pak
+relaxr/release/win-unpacked/locales/hu.pak
+relaxr/release/win-unpacked/locales/id.pak
+relaxr/release/win-unpacked/locales/it.pak
+relaxr/release/win-unpacked/locales/ja.pak
+relaxr/release/win-unpacked/locales/kn.pak
+relaxr/release/win-unpacked/locales/ko.pak
+relaxr/release/win-unpacked/locales/lt.pak
+relaxr/release/win-unpacked/locales/lv.pak
+relaxr/release/win-unpacked/locales/ml.pak
+relaxr/release/win-unpacked/locales/mr.pak
+relaxr/release/win-unpacked/locales/ms.pak
+relaxr/release/win-unpacked/locales/nb.pak
+relaxr/release/win-unpacked/locales/nl.pak
+relaxr/release/win-unpacked/locales/pl.pak
+relaxr/release/win-unpacked/locales/pt-BR.pak
+relaxr/release/win-unpacked/locales/pt-PT.pak
+relaxr/release/win-unpacked/locales/ro.pak
+relaxr/release/win-unpacked/locales/ru.pak
+relaxr/release/win-unpacked/locales/sk.pak
+relaxr/release/win-unpacked/locales/sl.pak
+relaxr/release/win-unpacked/locales/sr.pak
+relaxr/release/win-unpacked/locales/sv.pak
+relaxr/release/win-unpacked/locales/sw.pak
+relaxr/release/win-unpacked/locales/ta.pak
+relaxr/release/win-unpacked/locales/te.pak
+relaxr/release/win-unpacked/locales/th.pak
+relaxr/release/win-unpacked/locales/tr.pak
+relaxr/release/win-unpacked/locales/uk.pak
+relaxr/release/win-unpacked/locales/ur.pak
+relaxr/release/win-unpacked/locales/vi.pak
+relaxr/release/win-unpacked/locales/zh-CN.pak
+relaxr/release/win-unpacked/locales/zh-TW.pak
+relaxr/release/win-unpacked/resources/app.asar
+relaxr/release/win-unpacked/resources/elevate.exe
+relaxr/release/win-unpacked/resources/ffmpeg
+relaxr/release/win-unpacked/resources/ffmpeg.exe

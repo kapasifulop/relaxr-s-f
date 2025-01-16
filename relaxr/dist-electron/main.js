@@ -27,15 +27,34 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const electron_1 = require("electron");
-const isDev = __importStar(require("electron-is-dev"));
+//import * as isDev from 'electron-is-dev';
+const isDev = false;
 const ytdl_core_1 = __importDefault(require("@distube/ytdl-core"));
 const fs = __importStar(require("fs"));
 const path_1 = require("path");
 const fluent_ffmpeg_1 = __importDefault(require("fluent-ffmpeg"));
 const ffmpeg_1 = __importDefault(require("@ffmpeg-installer/ffmpeg"));
-// Set ffmpeg path
-fluent_ffmpeg_1.default.setFfmpegPath(ffmpeg_1.default.path);
+// Properly resolve FFmpeg path for both dev and production
+const ffmpegPath = electron_1.app.isPackaged
+    ? (0, path_1.join)(process.resourcesPath, 'ffmpeg')
+    : ffmpeg_1.default.path;
+// Ensure the path exists and is accessible
+if (!fs.existsSync(ffmpegPath)) {
+    console.error('FFmpeg path not found:', ffmpegPath);
+    // If packaged, try to copy FFmpeg to the resources directory
+    if (electron_1.app.isPackaged) {
+        try {
+            fs.copyFileSync(ffmpeg_1.default.path, ffmpegPath);
+            fs.chmodSync(ffmpegPath, '755'); // Ensure executable permissions
+        }
+        catch (error) {
+            console.error('Failed to copy FFmpeg:', error instanceof Error ? error.message : error);
+        }
+    }
+}
+fluent_ffmpeg_1.default.setFfmpegPath(ffmpegPath);
 let defaultSaveDirectory = null;
+let mainWindow = null;
 async function convertM4aToMp3(inputPath, outputPath, metadata) {
     return new Promise((resolve, reject) => {
         (0, fluent_ffmpeg_1.default)()
@@ -59,22 +78,31 @@ async function convertM4aToMp3(inputPath, outputPath, metadata) {
     });
 }
 function createWindow() {
-    const win = new electron_1.BrowserWindow({
+    mainWindow = new electron_1.BrowserWindow({
         width: 1024,
         height: 768,
-        title: 'Relaxr S',
+        title: 'Relaxr S F',
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
             webSecurity: false
         },
     });
-    win.loadURL(isDev
-        ? 'http://localhost:5173'
-        : `file://${(0, path_1.join)(__dirname, '../dist/index.html')}`);
     if (isDev) {
-        win.webContents.openDevTools();
+        mainWindow.loadURL('http://localhost:5173');
+        mainWindow.webContents.openDevTools();
     }
+    else {
+        // In production, load the built index.html file
+        const indexPath = (0, path_1.join)(__dirname, '../dist/index.html');
+        console.log('Loading index from:', indexPath);
+        mainWindow.loadFile(indexPath).catch(err => {
+            console.error('Failed to load index.html:', err);
+        });
+    }
+    mainWindow.on('closed', () => {
+        mainWindow = null;
+    });
 }
 electron_1.app.whenReady().then(createWindow);
 electron_1.app.on('window-all-closed', () => {
@@ -83,7 +111,7 @@ electron_1.app.on('window-all-closed', () => {
     }
 });
 electron_1.app.on('activate', () => {
-    if (electron_1.BrowserWindow.getAllWindows().length === 0) {
+    if (mainWindow === null) {
         createWindow();
     }
 });

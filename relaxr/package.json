@@ -9,25 +9,70 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "electron:dev": "vite dev & tsc -p tsconfig.electron.json && ELECTRON=true electron .",
-    "electron:build": "tsc -p tsconfig.electron.json && ELECTRON=true vite build && electron-builder"
+    "electron:build": "npm run build:electron && npm run build:vite && electron-builder",
+    "build:electron": "tsc -p tsconfig.electron.json",
+    "build:vite": "cross-env ELECTRON=true vite build",
+    "build:win": "npm run build:electron && npm run build:vite && electron-builder --win",
+    "build:mac": "npm run build:electron && npm run build:vite && electron-builder --mac"
   },
   "build": {
     "appId": "com.relaxr.app",
-    "mac": {
-      "category": "public.app-category.utilities"
-    },
+    "productName": "Relaxr",
+    "copyright": "Copyright © 2024",
+    "asar": true,
     "files": [
       "dist/**/*",
       "dist-electron/**/*"
     ],
     "directories": {
-      "output": "release"
-    }
+      "output": "release",
+      "buildResources": "assets"
+    },
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": [
+        "dmg"
+      ]
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Relaxr S F"
+    },
+    "extraResources": [
+      {
+        "from": "node_modules/@ffmpeg-installer/darwin-arm64/ffmpeg",
+        "to": "ffmpeg",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "node_modules/@ffmpeg-installer/win32-x64/ffmpeg.exe",
+        "to": "ffmpeg.exe",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ]
   },
   "dependencies": {
     "@distube/ytdl-core": "4.15.4",
     "@electron/remote": "^2.1.2",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ffmpeg-installer/win32-x64": "^4.1.0",
     "@heroicons/react": "^2.2.0",
     "autoprefixer": "^10.4.20",
     "electron-is-dev": "^2.0.0",
@@ -44,6 +89,7 @@
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
     "@vitejs/plugin-react": "^4.2.1",
+    "cross-env": "^7.0.3",
     "electron": "^29.1.1",
     "electron-builder": "^24.13.3",
     "eslint": "^8.57.0",

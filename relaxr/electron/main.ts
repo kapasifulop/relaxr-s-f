@@ -1,13 +1,32 @@
 import { app, BrowserWindow, ipcMain, dialog, shell } from 'electron';
-import * as isDev from 'electron-is-dev';
+//import * as isDev from 'electron-is-dev';
+const isDev = false;
 import ytdl from '@distube/ytdl-core';
 import * as fs from 'fs';
 import { join, dirname } from 'path';
 import ffmpeg from 'fluent-ffmpeg';
 import ffmpegInstaller from '@ffmpeg-installer/ffmpeg';
 
-// Set ffmpeg path
-ffmpeg.setFfmpegPath(ffmpegInstaller.path);
+// Properly resolve FFmpeg path for both dev and production
+const ffmpegPath = app.isPackaged
+  ? join(process.resourcesPath, 'ffmpeg')
+  : ffmpegInstaller.path;
+
+// Ensure the path exists and is accessible
+if (!fs.existsSync(ffmpegPath)) {
+  console.error('FFmpeg path not found:', ffmpegPath);
+  // If packaged, try to copy FFmpeg to the resources directory
+  if (app.isPackaged) {
+    try {
+      fs.copyFileSync(ffmpegInstaller.path, ffmpegPath);
+      fs.chmodSync(ffmpegPath, '755'); // Ensure executable permissions
+    } catch (error: unknown) {
+      console.error('Failed to copy FFmpeg:', error instanceof Error ? error.message : error);
+    }
+  }
+}
+
+ffmpeg.setFfmpegPath(ffmpegPath);
 
 interface VideoMetadata {
   title: string;
@@ -15,6 +34,7 @@ interface VideoMetadata {
 }
 
 let defaultSaveDirectory: string | null = null;
+let mainWindow: BrowserWindow | null = null;
 
 async function convertM4aToMp3(inputPath: string, outputPath: string, metadata: VideoMetadata): Promise<void> {
   return new Promise((resolve, reject) => {
@@ -39,7 +59,7 @@ async function convertM4aToMp3(inputPath: string, outputPath: string, metadata: 
 }
 
 function createWindow() {
-  const win = new BrowserWindow({
+  mainWindow = new BrowserWindow({
     width: 1024,
     height: 768,
     title: 'Relaxr S F',
@@ -50,15 +70,21 @@ function createWindow() {
     },
   });
 
-  win.loadURL(
-    isDev
-      ? 'http://localhost:5173'
-      : `file://${join(__dirname, '../dist/index.html')}`
-  );
-
   if (isDev) {
-    win.webContents.openDevTools();
+    mainWindow.loadURL('http://localhost:5173');
+    mainWindow.webContents.openDevTools();
+  } else {
+    // In production, load the built index.html file
+    const indexPath = join(__dirname, '../dist/index.html');
+    console.log('Loading index from:', indexPath);
+    mainWindow.loadFile(indexPath).catch(err => {
+      console.error('Failed to load index.html:', err);
+    });
   }
+
+  mainWindow.on('closed', () => {
+    mainWindow = null;
+  });
 }
 
 app.whenReady().then(createWindow);
@@ -70,7 +96,7 @@ app.on('window-all-closed', () => {
 });
 
 app.on('activate', () => {
-  if (BrowserWindow.getAllWindows().length === 0) {
+  if (mainWindow === null) {
     createWindow();
   }
 });
